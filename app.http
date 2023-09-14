@@ -1,0 +1,33 @@
+
+GET http://localhost:3000/users
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+"username" : "akdixit_951",
+"name" : "Akash Dixit",
+"password" : "akash@123",
+"gender" : "male",
+"location" : "Delhi"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+"username" : "akdixit_951",
+"password" : "akash@123"
+}
+
+###
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+"username" : "akdixit_951",
+"oldPassword" : "akash@123",
+"newPassword" : "akash@1234"
+}
